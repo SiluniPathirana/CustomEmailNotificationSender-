@@ -68,5 +68,9 @@ public class CustomNotificationHandler extends NotificationHandler {
        log.info("--------body-------" +notification.getTemplate().getBody());
        log.info("--------Footer-----" +notification.getTemplate().getFooter());
        log.info("--------send to----" + notification.getSendTo());
+       log.info("------------tenant-domain--------"+placeHolderDataMap.get("tenant-domain").toString());
+       log.info("------------userstore-domain--------"+placeHolderDataMap.get("userstore-domain").toString());
+
+
     }
 }
